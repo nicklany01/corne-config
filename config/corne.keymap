@@ -15,7 +15,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <300>;
+            tapping-term-ms = <200>;
             hold-trigger-key-positions = <32 6 9 8 7 18 30 31 19 20 21 33 34 35 23 22 10 11>;
         };
 
@@ -25,7 +25,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <300>;
+            tapping-term-ms = <200>;
             hold-trigger-key-positions = <0 1 13 12 25 24 26 14 2 3 15 27 28 16 4 5 17 29>;
         };
     };
@@ -39,7 +39,7 @@
         };
 
         MCtoggler {
-            bindings = <&to 4>;
+            bindings = <&tog 4>;
             key-positions = <31 27>;
         };
     };
@@ -67,25 +67,25 @@
 &trans  &kp F1               &kp F2                   &kp F3                    &kp F4                  &kp F5          &kp F6         &kp F7                   &kp F8                     &kp F9                    &kp F10              &trans
 &trans  &hml LCTRL NUMBER_1  &hml LEFT_META NUMBER_2  &hml LEFT_SHIFT NUMBER_3  &hml LEFT_ALT NUMBER_4  &kp NUMBER_5    &kp NUMBER_6   &hmr RIGHT_ALT NUMBER_7  &hmr RIGHT_SHIFT NUMBER_8  &hmr RIGHT_META NUMBER_9  &hmr RCTRL NUMBER_0  &trans
 &trans  &kp MINUS            &kp EQUAL                &kp GRAVE                 &kp SQT                 &trans          &kp BACKSLASH  &kp LEFT_PARENTHESIS     &kp RIGHT_PARENTHESIS      &kp LBKT                  &kp RBKT             &trans
-                                                      &trans                    &mo 3                   &kp SPACE       &kp RETURN     &mo 3                    &trans
+                                                      &kp TAB                   &mo 3                   &kp SPACE       &kp RETURN     &mo 3                    &kp CAPS
             >;
         };
 
         layer_2 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans          &trans        &trans     &kp DELETE     &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &kp BACKSPACE  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans    &kp PAGE_DOWN   &kp PAGE_UP   &trans     &kp ENTER      &trans
-                        &trans  &mo 3   &trans    &trans    &mo 3           &trans
+&trans  &trans  &trans  &trans   &trans  &trans       &trans    &trans          &trans        &trans     &kp DELETE     &trans
+&trans  &trans  &trans  &trans   &trans  &trans       &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &kp BACKSPACE  &trans
+&trans  &trans  &trans  &trans   &trans  &trans       &trans    &kp PAGE_DOWN   &kp PAGE_UP   &trans     &kp ENTER      &trans
+                        &kp TAB  &mo 3   &kp SPACE    &kp RET   &mo 3           &kp CAPS
             >;
         };
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &kp F11  &kp F12  &kp F13  &kp F14  &kp F15      &kp F16     &kp F17               &kp F18               &kp F19  &kp F20  &trans
+&trans  &trans   &trans   &trans   &trans   &trans       &kp K_MUTE  &kp C_VOLUME_DOWN     &kp C_VOLUME_UP       &trans   &trans   &trans
+&trans  &trans   &trans   &trans   &trans   &trans       &trans      &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &trans   &trans   &trans
+                          &kp TAB  &trans   &kp SPACE    &kp ENTER   &trans                &kp CAPS
             >;
         };
 
