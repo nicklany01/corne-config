@@ -9,24 +9,15 @@
 
 / {
     behaviors {
-        hml: homerow_mods_left {
+        hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS_LEFT";
+            label = "HOMEROW_MODS";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            hold-trigger-key-positions = <32 6 9 8 7 18 30 31 19 20 21 33 34 35 23 22 10 11>;
-        };
-
-        hmr: homerow_mods_right {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS_RIGHT";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            hold-trigger-key-positions = <0 1 13 12 25 24 26 14 2 3 15 27 28 16 4 5 17 29>;
+            flavor = "balanced";
+            quick-tap-ms = <150>;
         };
     };
 
@@ -55,10 +46,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&trans  &kp Q         &kp W             &kp E              &kp R            &kp T        &kp Y    &kp U            &kp I               &kp O              &kp P            &trans
-&trans  &hml LCTRL A  &hml LEFT_META S  &hml LEFT_SHIFT D  &hml LEFT_ALT F  &kp G        &kp H    &hmr LEFT_ALT J  &hmr RIGHT_SHIFT K  &hmr RIGHT_META L  &hmr RCTRL SEMI  &trans
-&trans  &kp Z         &kp X             &kp C              &kp V            &kp B        &kp N    &kp M            &kp COMMA           &kp DOT            &kp FSLH         &trans
-                                        &kp TAB            &mo 2            &kp SPACE    &kp RET  &mo 3            &kp CAPS
+&trans  &kp Q        &kp W            &kp E             &kp R           &kp T        &kp Y    &kp U           &kp I              &kp O             &kp P                &trans
+&trans  &hm LCTRL A  &hm LEFT_META S  &hm LEFT_SHIFT D  &hm LEFT_ALT F  &kp G        &kp H    &hm LEFT_ALT J  &hm RIGHT_SHIFT K  &hm RIGHT_META L  &hm RCTRL SEMICOLON  &trans
+&trans  &kp Z        &kp X            &kp C             &kp V           &kp B        &kp N    &kp M           &kp COMMA          &kp DOT           &kp FSLH             &trans
+                                      &kp TAB           &mo 2           &kp SPACE    &kp RET  &mo 3           &kp CAPS
             >;
         };
 
@@ -73,19 +64,19 @@
 
         numbers {
             bindings = <
-&trans  &kp F1               &kp F2                   &kp F3                    &kp F4                  &kp F5          &kp F6         &kp F7                  &kp F8                     &kp F9                    &kp F10              &trans
-&trans  &hml LCTRL NUMBER_1  &hml LEFT_META NUMBER_2  &hml LEFT_SHIFT NUMBER_3  &hml LEFT_ALT NUMBER_4  &kp NUMBER_5    &kp NUMBER_6   &hmr LEFT_ALT NUMBER_7  &hmr RIGHT_SHIFT NUMBER_8  &hmr RIGHT_META NUMBER_9  &hmr RCTRL NUMBER_0  &trans
-&trans  &kp MINUS            &kp EQUAL                &kp GRAVE                 &kp SQT                 &trans          &kp BACKSLASH  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS      &kp LBKT                  &kp RBKT             &trans
-                                                      &kp TAB                   &mo 4                   &kp SPACE       &kp RETURN     &mo 4                   &kp CAPS
+&trans  &kp F1              &kp F2                  &kp F3                   &kp F4                 &kp F5          &kp F6         &kp F7                 &kp F8                 &kp F9             &kp F10       &trans
+&trans  &hm LCTRL NUMBER_1  &hm LEFT_META NUMBER_2  &hm LEFT_SHIFT NUMBER_3  &hm LEFT_ALT NUMBER_4  &kp NUMBER_5    &kp NUMBER_6   &hm LEFT_ALT NUMBER_7  &hm RIGHT_SHIFT N8     &hm RIGHT_META N9  &hm LCTRL N0  &trans
+&trans  &kp GRAVE           &kp SQT                 &kp MINUS                &kp PLUS               &kp EQUAL       &kp BACKSLASH  &kp LEFT_PARENTHESIS   &kp RIGHT_PARENTHESIS  &kp LBKT           &kp RBKT      &trans
+                                                    &kp TAB                  &mo 4                  &kp SPACE       &kp RETURN     &mo 4                  &kp CAPS
             >;
         };
 
         extras {
             bindings = <
-&trans  &trans  &trans  &trans   &trans  &trans       &trans    &trans          &trans        &trans     &kp DELETE     &trans
-&trans  &trans  &trans  &trans   &trans  &trans       &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &kp BACKSPACE  &trans
-&trans  &trans  &trans  &trans   &trans  &trans       &trans    &kp PAGE_DOWN   &kp PAGE_UP   &trans     &kp ENTER      &trans
-                        &kp TAB  &mo 4   &kp SPACE    &kp RET   &mo 4           &kp CAPS
+&trans  &trans  &trans  &trans   &trans  &trans       &trans              &trans          &trans        &trans     &kp DELETE     &trans
+&trans  &trans  &trans  &trans   &trans  &trans       &kp LEFT            &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &kp BACKSPACE  &trans
+&trans  &trans  &trans  &trans   &trans  &trans       &kp K_CONTEXT_MENU  &kp PAGE_DOWN   &kp PAGE_UP   &trans     &kp ENTER      &trans
+                        &kp TAB  &mo 4   &kp SPACE    &kp RET             &mo 4           &kp CAPS
             >;
         };
 
