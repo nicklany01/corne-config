@@ -85,25 +85,25 @@
 &trans  &kp F1              &kp F2                  &kp F3                      &kp F4                 &kp F5          &kp F6         &kp F7                 &kp F8                 &kp F9             &kp F10       &trans
 &trans  &hm LCTRL NUMBER_1  &hm LEFT_META NUMBER_2  &shift LEFT_SHIFT NUMBER_3  &hm LEFT_ALT NUMBER_4  &kp NUMBER_5    &kp NUMBER_6   &hm LEFT_ALT NUMBER_7  &shift RIGHT_SHIFT N8  &hm RIGHT_META N9  &hm LCTRL N0  &trans
 &trans  &kp GRAVE           &kp SQT                 &kp MINUS                   &kp PLUS               &kp EQUAL       &kp BACKSLASH  &kp LEFT_PARENTHESIS   &kp RIGHT_PARENTHESIS  &kp LBKT           &kp RBKT      &trans
-                                                    &kp TAB                     &mo 5                  &kp SPACE       &kp RETURN     &mo 5                  &mo 4
+                                                    &mo 4                       &mo 5                  &kp SPACE       &kp RETURN     &mo 5                  &mo 4
             >;
         };
 
         extras {
             bindings = <
-&trans  &mkp RCLK  &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT    &trans              &trans          &trans        &trans     &kp DELETE     &trans
-&trans  &mkp LCLK  &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT    &kp LEFT            &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &kp BACKSPACE  &trans
-&trans  &mkp MB4   &mkp MB3        &mkp RCLK     &mkp LCLK       &mkp MB5           &kp K_CONTEXT_MENU  &kp PAGE_DOWN   &kp PAGE_UP   &trans     &kp ENTER      &trans
-                                   &kp TAB       &mo 5           &kp SPACE          &kp RET             &mo 5           &mo 4
+&trans  &trans  &trans  &trans   &trans  &trans       &trans              &trans          &trans        &trans     &kp DELETE     &trans
+&trans  &trans  &trans  &trans   &trans  &trans       &kp LEFT            &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &kp BACKSPACE  &trans
+&trans  &trans  &trans  &trans   &trans  &trans       &kp K_CONTEXT_MENU  &kp PAGE_DOWN   &kp PAGE_UP   &kp CAPS   &trans         &trans
+                        &kp TAB  &mo 5   &kp SPACE    &kp RET             &mo 5           &mo 4
             >;
         };
 
         Mouse {
             bindings = <
-&trans  &trans  &trans  &trans   &trans  &trans       &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &mkp RCLK  &trans
-&trans  &trans  &trans  &trans   &trans  &trans       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &mkp LCLK  &trans
-&trans  &trans  &trans  &trans   &trans  &trans       &mkp MB4        &mkp LCLK       &mkp RCLK     &mkp MCLK        &mkp MB5   &trans
-                        &kp TAB  &mo 5   &kp SPACE    &kp RETURN      &mo 5           &trans
+&trans  &mkp RCLK  &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT    &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &mkp RCLK  &trans
+&trans  &mkp LCLK  &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &mkp LCLK  &trans
+&trans  &mkp MB4   &mkp MCLK       &mkp RCLK     &mkp LCLK       &mkp MB5           &mkp MB4        &mkp LCLK       &mkp RCLK     &mkp MCLK        &mkp MB5   &trans
+                                   &kp TAB       &mo 5           &kp SPACE          &kp RETURN      &mo 5           &trans
             >;
         };
 
@@ -112,7 +112,7 @@
 &trans  &kp F11       &kp F12       &kp F13       &kp F14       &kp F15           &kp F16     &kp F17               &kp F18               &kp F19  &kp F20  &trans
 &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4      &kp K_MUTE  &kp C_VOLUME_DOWN     &kp C_VOLUME_UP       &trans   &trans   &trans
 &trans  &trans        &trans        &trans        &bt BT_CLR    &bt BT_CLR_ALL    &trans      &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &trans   &trans   &trans
-                                    &kp TAB       &trans        &kp SPACE         &kp ENTER   &trans                &mo 5
+                                    &kp TAB       &trans        &kp SPACE         &kp ENTER   &trans                &trans
             >;
         };
     };
