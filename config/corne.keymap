@@ -81,37 +81,37 @@
 
         numbers {
             bindings = <
-&trans  &kp F1              &kp F2                  &kp F3                      &kp F4                 &kp F5          &kp F6         &kp F7                 &kp F8                 &kp F9                &kp F10                &trans
-&trans  &hm LCTRL NUMBER_1  &hm LEFT_META NUMBER_2  &shift LEFT_SHIFT NUMBER_3  &hm LEFT_ALT NUMBER_4  &kp NUMBER_5    &kp NUMBER_6   &hm LEFT_ALT NUMBER_7  &shift RIGHT_SHIFT N8  &hm RIGHT_META N9     &hm LCTRL N0           &trans
-&trans  &kp GRAVE           &kp SQT                 &kp MINUS                   &kp PLUS               &kp EQUAL       &kp BACKSLASH  &kp LBKT               &kp RBKT               &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&trans  &kp F1              &kp F2                  &kp F3                      &kp F4                 &kp F5          &kp F6         &kp F7                 &kp F8                 &kp F9             &kp F10       &trans
+&trans  &hm LCTRL NUMBER_1  &hm LEFT_META NUMBER_2  &shift LEFT_SHIFT NUMBER_3  &hm LEFT_ALT NUMBER_4  &kp NUMBER_5    &kp NUMBER_6   &hm LEFT_ALT NUMBER_7  &shift RIGHT_SHIFT N8  &hm RIGHT_META N9  &hm LCTRL N0  &trans
+&trans  &kp GRAVE           &kp TILDE               &kp MINUS                   &kp PLUS               &kp EQUAL       &kp BACKSLASH  &kp PIPE               &trans                 &trans             &trans        &trans
                                                     &mo 4                       &mo 5                  &kp SPACE       &kp RETURN     &mo 5                  &mo 4
             >;
         };
 
         extras {
             bindings = <
-&trans  &trans  &trans  &trans   &trans  &trans       &trans              &trans          &trans        &trans     &kp DELETE     &trans
-&trans  &trans  &trans  &trans   &trans  &trans       &kp LEFT            &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &kp BACKSPACE  &trans
-&trans  &trans  &trans  &trans   &trans  &trans       &kp K_CONTEXT_MENU  &kp PAGE_DOWN   &kp PAGE_UP   &kp CAPS   &trans         &trans
-                        &kp TAB  &mo 5   &kp SPACE    &kp RET             &mo 5           &mo 4
+&trans  &trans                &trans                 &trans            &trans             &trans               &trans              &trans          &trans        &trans     &kp DELETE     &trans
+&trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp DOUBLE_QUOTES    &kp LEFT            &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &kp BACKSPACE  &trans
+&trans  &kp LESS_THAN         &kp GREATER_THAN       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SQT              &kp K_CONTEXT_MENU  &kp PAGE_DOWN   &kp PAGE_UP   &kp HOME   &trans         &trans
+                                                     &kp TAB           &mo 5              &kp SPACE            &kp RET             &mo 5           &mo 4
             >;
         };
 
-        Mouse {
+        mouse {
             bindings = <
-&trans  &mkp RCLK  &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT    &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &mkp RCLK  &trans
-&trans  &mkp LCLK  &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &mkp LCLK  &trans
-&trans  &mkp MB4   &mkp MCLK       &mkp RCLK     &mkp LCLK       &mkp MB5           &mkp MB4        &mkp LCLK       &mkp RCLK     &mkp MCLK        &mkp MB5   &trans
-                                   &kp TAB       &mo 5           &kp SPACE          &kp RETURN      &mo 5           &trans
+&trans  &trans        &trans        &trans        &trans        &trans          &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &mkp RCLK  &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &mkp LCLK  &trans
+&trans  &trans        &trans        &trans        &trans        &bt BT_CLR      &mkp MB4        &mkp LCLK       &mkp RCLK     &mkp MCLK        &mkp MB5   &trans
+                                    &kp TAB       &mo 5         &kp SPACE       &kp RETURN      &mo 5           &trans
             >;
         };
 
         functionality {
             bindings = <
-&trans  &kp F11       &kp F12       &kp F13       &kp F14       &kp F15         &kp F16     &kp F17               &kp F18               &kp F19  &kp F20  &trans
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp K_MUTE  &kp C_VOLUME_DOWN     &kp C_VOLUME_UP       &trans   &trans   &trans
-&trans  &trans        &trans        &trans        &trans        &bt BT_CLR      &trans      &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &trans   &trans   &trans
-                                    &kp TAB       &trans        &kp SPACE       &kp ENTER   &trans                &trans
+&trans  &kp F11    &kp F12        &kp F13         &kp F14       &kp F15      &kp F16     &kp F17               &kp F18               &kp F19           &kp F20        &trans
+&trans  &kp LCTRL  &kp LEFT_META  &kp LEFT_SHIFT  &kp LEFT_ALT  &kp CAPS     &kp K_MUTE  &kp C_VOLUME_DOWN     &kp C_VOLUME_UP       &kp K_PLAY_PAUSE  &kp BACKSPACE  &trans
+&trans  &trans     &trans         &trans          &trans        &trans       &trans      &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &trans            &trans         &trans
+                                  &kp TAB         &trans        &kp SPACE    &kp ENTER   &trans                &trans
             >;
         };
     };
