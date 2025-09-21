@@ -99,10 +99,10 @@
 
         extras {
             bindings = <
-&trans  &trans                &trans                 &trans            &trans             &trans               &trans    &trans          &trans        &trans     &kp DELETE          &trans
-&trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp DOUBLE_QUOTES    &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &kp BACKSPACE       &trans
-&trans  &kp LESS_THAN         &kp GREATER_THAN       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SQT              &kp HOME  &kp PAGE_DOWN   &kp PAGE_UP   &kp END    &kp K_CONTEXT_MENU  &trans
-                                                     &kp TAB           &mo 5              &kp SPACE            &kp RET   &mo 5           &mo 4
+&trans  &trans                      &trans                           &trans                     &trans                    &trans               &trans    &trans          &trans        &trans     &kp DELETE          &trans
+&trans  &hm LCTRL LEFT_PARENTHESIS  &hm LEFT_META RIGHT_PARENTHESIS  &hm LEFT_SHIFT LEFT_BRACE  &hm LEFT_ALT RIGHT_BRACE  &kp DOUBLE_QUOTES    &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &kp BACKSPACE       &trans
+&trans  &kp LESS_THAN               &kp GREATER_THAN                 &kp LEFT_BRACKET           &kp RIGHT_BRACKET         &kp SQT              &kp HOME  &kp PAGE_DOWN   &kp PAGE_UP   &kp END    &kp K_CONTEXT_MENU  &trans
+                                                                     &kp TAB                    &mo 5                     &kp SPACE            &kp RET   &mo 5           &mo 4
             >;
         };
 
