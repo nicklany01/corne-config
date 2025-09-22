@@ -67,13 +67,13 @@
             #binding-cells = <0>;
             bindings =
                 <&kp F>,
-                <&macro_wait_time 100>,
+                <&macro_wait_time 300>,
                 <&mkp MB1>,
-                <&macro_wait_time 100>,
+                <&macro_wait_time 300>,
                 <&kp F>,
-                <&macro_wait_time 100>,
+                <&macro_wait_time 300>,
                 <&mkp MB2>,
-                <&macro_wait_time 100>,
+                <&macro_wait_time 300>,
                 <&msc MOVE_X(5)>;
 
             label = "STYLE_SURF";
